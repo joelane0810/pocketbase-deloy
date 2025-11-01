@@ -129,7 +129,7 @@ migrate((app) => {
     "viewRule": null
   });
 
-  return app.save(collection);
+  return Dao(db).saveCollection(collection);
 }, (app) => {
   const collection = app.findCollectionByNameOrId("pbc_484305853");
 
